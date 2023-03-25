@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "learn-fast-api"
+version = "0.1.0"
+description = ""
+authors = ["Szymon Wrzos <szymon.wrzos@bitapps.fi>"]
+readme = "README.md"
+packages = [{include = "learn_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
+fastapi = "^0.95.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
