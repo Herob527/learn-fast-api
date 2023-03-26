@@ -4,12 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Szymon Wrzos <szymon.wrzos@bitapps.fi>"]
 readme = "README.md"
-packages = [{include = "learn_fast_api"}]
+packages = [{include = "database"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 uvicorn = {extras = ["standard"], version = "^0.21.1"}
 fastapi = "^0.95.0"
+sqlalchemy = "^2.0.7"
 
 
 [build-system]
